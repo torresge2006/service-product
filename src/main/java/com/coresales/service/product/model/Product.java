@@ -24,32 +24,32 @@ public class Product {
     Long ProductoId;
 
     @Column(name = "Codigo", length = 30, nullable = false)
-    String Codigo;
+    String codigo;
 
     @Column(name = "Nombre", length = 150, nullable = false)
-    String Nombre;
+    String nombre;
 
     @Column(name = "Descripcion", length = 500) // , nullable = false)
-    String Descripcion;
+    String descripcion;
 
     @Column(name = "CategoriaProductoId", nullable = false)
-    Integer CategoriaProductoId;
+    Integer categoriaProductoId;
 
     @Column(name = "MarcaId") //, nullable = false)
-    Integer MarcaId;
+    Integer marcaId;
 
     @Column(name = "PrecioCompra", precision = 12/*, scale = 2*/)
-    BigDecimal PrecioCompra;
+    BigDecimal precioCompra;
 
     @Column(name = "PrecioVenta", precision = 12/*, scale = 2*/)
-    BigDecimal PrecioVenta;
+    BigDecimal precioVenta;
 
     @Column(name = "StockMinimo", nullable = false)
-    Integer StockMinimo;
+    Integer stockMinimo;
 
     @Column(name = "Activo", nullable = false)
-    Boolean Activo;
+    Boolean activo;
 
     @Column(name = "FechaRegistro", nullable = false)
-    LocalDateTime FechaRegistro;
+    LocalDateTime fechaRegistro;
 }

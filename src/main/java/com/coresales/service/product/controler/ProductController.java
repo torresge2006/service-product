@@ -40,7 +40,7 @@ public class ProductController {
     //==========================================
     // POST /api/productos/crear
     //==========================================
-    @PostMapping
+    @PostMapping("/crear")
     public ResponseEntity<Product> crear(@RequestBody Product request) {
         Product response = productService.crear(request);
         return ResponseEntity
